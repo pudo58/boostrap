@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab1</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <style>
+        header{
+            position: relative;
+        }
+        .shopping-male {
+            font-size: 50px;
+            font-variant: small-caps;
+            font-family: Impact;
+            color: white;
+            text-shadow: 0 0 2px black;
+            margin: 0px;
+            letter-spacing: 0.3px;
+            border-bottom: 1px dotted gray;
+        }
+
+        #title {
+            margin-top: 5px;
+            letter-spacing: 0.5px;
+            font-variant: small-caps;
+            font-size: 15px;
+        }
+        .card-header{
+            font-weight: bold;
+        }
+      
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 text-center p-4">
+                <br><br>
+                <h1 class="shopping-male">Online shopping male</h1>
+                <h5 id="title">The center point of the professional programing</h5>
+
+            </div>
+            <div class="col-6">
+                <img src="images/header-object.png" alt="" srcset="">
+            </div>
+        </div>
+
+        <nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">                          
+                            <a class="nav-link " aria-current="page" href="#">
+                                <i class="bi bi-house-fill"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                  </svg></i><span id="trangchu">Trang chủ</span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#"><span id="gioithieu">Giới thiệu</span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#"><span id="lienhe">Liên hệ</span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span id="idgopy">Góp ý</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span id="hoidap">Hỏi đáp</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Tài khoản
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+                                <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
+                                <li><a class="dropdown-item" href="#">Đăng ký thành viên</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                                <li><a class="dropdown-item" href="#">Đổi mật khẩu</a></li>
+                                <li><a class="dropdown-item" href="#">Cập nhật hồ sơ</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Đơn hàng</a></li>
+                                <li><a class="dropdown-item" href="#">Hàng đã mua</a></li>
+                            </ul>
+
+                </div>
+               <span class="p-2 text-light bg-dark" >English</span>
+               
+                <span class="p-2 text-light">Tiếng Việt</span>
+            </div>
+        </nav>
+        <div class="row" style="margin-top: 5px;">
+            <div class="col-lg-9">
+                <article>
+                <!-- 
+                 -->
+                 <div class="card p-0">
+                     <div class="card-header">Danh sách khách hàng</div>
+                     <div class="table-responsive ">
+                        <table class="table table-striped text-nowrap">
+                            <thead>
+                                <td>$</td>
+                                <td>họ tên</td>
+                                <td>SDt</td>
+                                <td>Địa chỉ</td>
+                                <td colspan="2">Thao tác</td>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Lã Văn Thọ</td>
+                                    <td>0704145768</td>
+                                    <td>Hải Phòng</td>
+                                    <td><button class="btn btn-primary">Sửa</button></td>
+                                    <td><button class="btn btn-danger">Xóa</button></td>
+                                </tr>
+                                <tr>
+                                   <td>1</td>
+                                   <td>Lã Văn Thọ</td>
+                                   <td>0704145768</td>
+                                   <td>Hải Phòng</td>
+                                   <td><button class="btn btn-primary">Sửa</button></td>
+                                   <td><button class="btn btn-danger">Xóa</button></td>
+                               </tr>
+                               <tr>
+                                   <td>1</td>
+                                   <td>Lã Văn Thọ</td>
+                                   <td>0704145768</td>
+                                   <td>Hải Phòng</td>
+                                   <td><button class="btn btn-primary">Sửa</button></td>
+                                   <td><button class="btn btn-danger">Xóa</button></td>
+                               </tr>
+                               <tr>
+                                   <td>1</td>
+                                   <td>Lã Văn Thọ</td>
+                                   <td>0704145768</td>
+                                   <td>Hải Phòng</td>
+                                   <td><button class="btn btn-primary">Sửa</button></td>
+                                   <td><button class="btn btn-danger">Xóa</button></td>
+                               </tr>
+                            </tbody>
+                        </table>
+                     </div>
+                     <div class="card-footer"></div>
+                 </div>
+                
+                
+                </article>
+            </div>
+            <div class="col-3 row-cols-1">
+                <aside>
+                    <div class="card" style="max-width: 540px;margin: 7px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img  src="images/shoppingcart.gif" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <p class="card-text"><span class="h3">100</span> <span
+                                            style="font-variant: small-caps;">Item</span></p>
+                                    <p class="card-text">$56.8</p>
+                                    <p class="card-text"><a class="text-decoration-none"
+                                            style="font-variant: small-caps;" href="#">View cart</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="height: 60px;border: 1px solid grey; margin-left: 5px; margin-right: 5px;" >
+                    <input class=" card-subtitle list-group-item align-items-center" list="datalistOptions" id="exampleDataList"
+                        placeholder="Type to search..." style="height: 40px; margin: 8px;margin-right: 8px;">
+                    </div>
+                    <div class="card list-group" style="margin: 10px;">
+                        <span class="card-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-ul" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                              </svg> Chủng loại</span>
+                        <a href="" class="list-group-item">Điện thoại di động</a>
+                        <a href="" class="list-group-item">Máy tính xách tay</a>
+                        <a href="" class="list-group-item">Máy tính để bàn</a>
+                        <a href="" class="list-group-item">Quạt máy</a>
+                        <a href="" class="list-group-item">Tivi</a>
+                        <a href="" class="list-group-item">Tủ lạnh</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+  <div class="row" style="height: 30px;margin-top: 10px;">
+      <footer class="bg-danger text-center" >
+          <span style="margin-top: 10px;">Lã Văn thọ PH13911</span>
+      </footer>
+  </div>
+    </div>
+
+</body>
+
+</html>
